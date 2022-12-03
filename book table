@@ -1,0 +1,22 @@
+create table book
+(book id number(2)primary key,bname varchar(30),isbn number(3));
+
+insert into book values(1,'DBMS',735);
+insert into book values(2,'WD',735);
+insert into book values(3,'CS',735);
+insert into book values(4,'FOP',735);
+insert into book values(5,'DM',735);
+insert into book values(6,'MCA',735);
+
+alter table book add price number(4);
+
+update book set price ='500' where book='1';
+update book set price ='600' where book='2';
+update book set price ='700' where book='3';
+update book set price ='800' where book='4';
+update book set price ='900' where book='5';
+update book set price ='1000' where book='6';
+
+
+
+select * from book;
